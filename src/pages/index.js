@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from "../components/layout";
 import Timer from "../components/timer"
+import Particles from 'react-particles-js'
 
 class IndexPage extends React.Component {
   state={
@@ -13,14 +14,16 @@ class IndexPage extends React.Component {
     return(
       <Layout>
         <div className="bgimg">
+        <Particles style={{ position: 'absolute' }} />
           <div className="bg-layout">
             <div className="middle">
               <div className="content">
-                <h1 className="h1">COMING SOON</h1>
+                <h1 className="h1">coming soon</h1>
+                <h2 className="company-name">sahabatmu.org</h2>
                 <Timer />
-                <p>We will be launch soon, enter your email address and get our early notification.</p>
-                <input name="email" type="text" placeholder="email address" />
-                <button className="button">Submit</button>
+                <p>We will be launch soon, keep the time as above.</p>
+                {/* <input  name="email" type="text" placeholder="email address" />
+                <button className="button">Submit</button> */}
                 <div id="mc_embed_signup">
               </div>
                 <div className="btn-group">
